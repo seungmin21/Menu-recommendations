@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메뉴 추천 프로그램</title>
+</head>
+<body>
+  <div id="root">
+    <h1>메뉴 추천 프로그램</h1>
+    <div>
+        <label for="new-meal">최근 먹은 음식 추가:</label>
+        <input type="text" id="new-meal">
+        <button onclick="addRecentMeal()">추가</button>
+    </div>
+    <div>
+        <h2>최근 먹은 음식</h2>
+        <ul id="recent-meals-list"></ul>
+    </div>
+    <button onclick="recommendMenu()">추천 메뉴</button>
+    <p id="recommended-menu"></p>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
